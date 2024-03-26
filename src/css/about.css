@@ -1,1 +1,82 @@
 /* About styles */
+
+.about-cards-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-cards-ordered {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;    
+}
+
+.about-card-emoji {
+    border-radius: 16px;
+    background-color: var(--green);
+    height: 313px;
+    position: relative;
+}
+
+@media screen and (min-width: 768px) {
+    .about-card-emoji {
+        height: 243px;
+    }
+
+    .about-cards-ordered {
+        flex-direction: row;
+        flex-wrap: wrap;
+        --items: 2;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .about-card-emoji {
+        width: 310px;
+        height: 352px;
+        flex-shrink: 0;
+    }
+
+    .about-cards-box {
+        flex-direction: row;
+    }
+
+    .about-card {
+        width: calc(((100% - 310px - 20px) - 20px * (var(--items) - 1)) / var(--items));
+    }
+}
+
+.about-card-emoji-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-card {
+    padding: 32px;
+    border-radius: 16px;
+    background-color: var(--gray);
+    width: calc((100% - 20px * (var(--items) - 1)) / var(--items));
+}
+
+.about-card-order-number {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.1429;
+    letter-spacing: -0.02em;
+    color: var(--green);
+    margin-bottom: 16px;
+}
+
+.about-card-text-content {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--black);
+}
