@@ -1,0 +1,84 @@
+<section class="application">
+  <h2>Leave an <span class="under">application</span></h2>
+  <p>Please use the form below to contact us. Enter your name, email, and message and we'll get back to you shortly.</p>
+  <div class="application__body">
+    <div class="application__ad">
+      <div class="application-ad__img"></div>
+      <div class="application-add__background"></div>
+      <p></p>
+    </div>
+    <form action="" class="application__form">
+      <label class="application-form-label" for="contact-name">Name</label>
+            <div class="application-form-field">
+              <input
+                class="application-form-input"
+                type="text"
+                id="contact-name"
+                name="contact-name"
+                required
+              />
+              <svg class="application-form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+            <label class="application-form-label" for="contact-phone">Phone</label>
+            <div class="application-form-field">
+              <input
+                class="application-form-input"
+                type="tel"
+                id="contact-phone"
+                name="contact-phone"
+                required
+              />
+              <svg class="application-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+            <label class="application-form-label" for="contact-email">Email</label>
+            <div class="application-form-field">
+              <input
+                class="application-form-input"
+                type="email"
+                id="contact-email"
+                name="contact-email"
+                required
+              />
+              <svg class="application-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+            <label class="application-form-label" for="contact-comment"
+              >Comment</label
+            >
+            <div class="application-form-field">
+              <textarea
+                name="contact-comment"
+                id="contact-comment"
+                cols="30"
+                rows="10"
+                class="application-form-comment"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+            <label class="application-form-agreement">
+              <input type="checkbox" class="visually-hidden" />
+              <svg class="custom-checkbox" width="16" height="16">
+                <use
+                  class="checkbox-passive"
+                  href="./images/icons.svg#icon-checkbox"
+                ></use>
+                <use
+                  class="checkbox-active"
+                  href="./images/icons.svg#icon-checked"
+                ></use>
+              </svg>
+              <span class="application-form-agreement-desc"
+                >I accept the terms and conditions of the
+                <a class="application-form-agreement-link">Privacy Policy</a></span
+              >
+            </label>
+
+            <button class="application-form-btn" type="submit">Send</button>
+    </form>
+  </div>
+</section>
