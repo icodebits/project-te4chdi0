@@ -1,3 +1,14 @@
-<header>
-  Header
+<header class="header">
+  <div class="container header-container">
+    <load src="./logo.html" modifier="header-logo" />
+    <nav class="header-nav">
+      <load src="./menu.html" modifier="header-menu" />
+    </nav>
+    <load src="./socials.html" modifier="header-socials" />
+    <button type="button" class="mobile-menu-button">
+      <svg class="hamburger-icon">
+        <use href="/images/icons.svg#hamburger"></use>
+      </svg>
+    </button>
+  </div>
 </header>
