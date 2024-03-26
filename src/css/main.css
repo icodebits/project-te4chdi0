@@ -9,6 +9,7 @@
 @import url('./hero.css');
 @import url('./about.css');
 @import url('./lessons.css');
+@import url('./variables.css');
 @import url('./deal.css');
 @import url('./teachers.css');
 @import url('./register-form.css');
@@ -18,14 +19,19 @@
 :root {
   --black: #121417;
   --green: #4dc274;
-  --green-linear: linear-gradient(85deg, #4DC274 2.25%, #BEE8CC 131.25%);
+  --green-linear: linear-gradient(85deg, #4dc274 2.25%, #bee8cc 131.25%);
   --light-green: #d4fde1;
   --gray: #f3f5f6;
   --white: #fff;
+
+  --dark-green: #38ae5f;
+  --light-black: rgba(18, 20, 23, 0.5);
+  --font-weight-primary-bold: 700;
+  --font-weight-primary-regular: 400;
 }
 
 body {
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
   color: var(--black);
   background-color: var(--white);
   font-size: 16px;
@@ -40,21 +46,44 @@ body {
   margin-right: auto;
 }
 
+section {
+  display: flex;
+  width: 100%;
+  max-width: 335px;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 375px) {
   .container {
-      max-width: 375px;
+    max-width: 375px;
+  }
+
+  .section {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-      max-width: 768px;
+    max-width: 768px;
+  }
+
+  .section {
+    padding: 50px 0;
+    max-width: 704px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
-      max-width: 1280px;
+    max-width: 1280px;
+  }
+
+  .section {
+    padding: 75px 0;
+    max-width: 1152px;
   }
 }
 
