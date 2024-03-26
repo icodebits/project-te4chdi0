@@ -135,3 +135,21 @@ img {
     height: 20px;
   }
 }
+
+.supporting-text {
+  font-size: 14px;
+  line-height: 1.7143;
+  text-align: center;
+  color: var(--black-translucent);
+  margin: 0 auto 40px;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .supporting-text {
+    font-size: 18px;
+    line-height: 1.6667;
+    margin-bottom: 64px;
+    max-width: 658px;
+  }
+}
