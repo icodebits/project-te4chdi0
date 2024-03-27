@@ -59,7 +59,7 @@
 
 .section-teachers .teacher h3 {
   font-family: var(--font-family);
-  font-weight: 700;
+  font-weight: var(--font-weight-primary-bold);
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -69,7 +69,7 @@
 }
 
 .section-teachers .teacher p {
-  font-weight: 400;
+  font-weight: var(--font-weight-primary-regular);
   font-size: 14px;
   line-height: 1.71;
   font-family: var(--font-family);

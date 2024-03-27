@@ -17,18 +17,17 @@
 
 :root {
   --black: #121417;
-  --black-translucent: rgba(18, 20, 23, 0.5);
   --green: #4dc274;
   --green-linear: linear-gradient(85deg, #4dc274 2.25%, #bee8cc 131.25%);
   --light-green: #d4fde1;
   --light-green-underline: #bee8cc;
   --gray: #f3f5f6;
   --white: #fff;
-
   --dark-green: #38ae5f;
   --light-black: rgba(18, 20, 23, 0.5);
   --font-weight-primary-bold: 700;
   --font-weight-primary-regular: 400;
+  --items: 1;
 }
 
 body {
@@ -37,7 +36,7 @@ body {
   background-color: var(--white);
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: var(--font-weight-primary-regular);
   line-height: 1.5;
 }
 
@@ -49,30 +48,17 @@ body {
   margin-right: auto;
 }
 
-section {
-  display: flex;
-  width: 100%;
-  max-width: 335px;
-  padding: 40px 0;
-  margin: 0 auto;
-}
-
 @media screen and (min-width: 375px) {
   .container {
     max-width: 375px;
-    padding-left: 32px;
-    padding-right: 32px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-  }
-
-  .section {
-    padding: 50px 0;
-    max-width: 704px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
@@ -100,7 +86,7 @@ section {
 .section-title {
   text-align: center;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: var(--font-weight-primary-bold);
   line-height: 1.125;
   letter-spacing: -0.02em;
   width: 100%;
@@ -138,7 +124,7 @@ section {
   font-size: 14px;
   line-height: 1.7143;
   text-align: center;
-  color: var(--black-translucent);
+  color: var(--light-black);
   margin: 0 auto 40px;
   max-width: 100%;
 }
