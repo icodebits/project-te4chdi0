@@ -13,11 +13,12 @@ body {
 
 .header {
   position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--white);
-    z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--white);
+  z-index: 999;
+  overflow: hidden;
 }
 
 .header-container {
@@ -72,12 +73,12 @@ body {
     justify-content: center;
     border: 1px solid rgba(18, 20, 23, 0.1);
     border-radius: 10px;
+    color: var(--black);
   }
 
   .socials-icon {
     width: 28px;
     height: 28px;
-    fill: var(--black);
     opacity: 0.8;
   }
 
@@ -85,10 +86,6 @@ body {
   .socials-link:focus {
     color: var(--green);
     border-color: var(--green);
-
-    .socials-icon {
-      fill: var(--green);
-    }
   }
 }
 
@@ -103,7 +100,6 @@ body {
 .hamburger-icon {
   width: 32px;
   height: 32px;
-  fill: currentColor;
 }
 
 @media only screen and (min-width: 768px) {
@@ -114,7 +110,9 @@ body {
 }
 
 .mobile-menu-wrapper {
-  display: none;
+  /* display: none; */
+  transform: translateX(100%);
+  opacity: 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -122,30 +120,39 @@ body {
   height: 100%;
   background-color: rgba(18, 20, 23, 0.4);
   z-index: 1000;
+  overflow: hidden;
+  transition: opacity 300ms ease-in, transform 0ms;
+  transition-delay: 0ms, 300ms;
 }
 
 .mobile-menu-popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
   gap: 20px;
-  position: fixed;
-  top: 0;
-  right: -100%;
   width: 50vw;
   min-width: 240px;
   max-width: 384px;
   height: 100vh;
+  color: var(--white);
   background-color: var(--green);
   z-index: 1001;
   padding: 60px 20px 20px;
+  transition: transform 300ms ease-in;
 }
 
 .mobile-menu-wrapper.is-open {
-  display: block;
+  /* display: block; */
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms ease-in, transform 0ms;
   .mobile-menu-popup {
-    right: 0;
+    transform: translateX(0);
   }
 }
 
@@ -170,7 +177,6 @@ body {
 .close-icon {
   width: 24px;
   height: 24px;
-  fill: var(--white);
 }
 
 @media only screen and (min-width: 768px) {
@@ -223,8 +229,9 @@ body {
   .socials-icon {
     width: 26px;
     height: 26px;
-    fill: var(--white);
     opacity: 0.8;
+    transition: var(--icon-transition);
+    transition-property: opacity;
   }
 
   .socials-link:hover,

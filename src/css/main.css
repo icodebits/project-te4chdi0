@@ -24,6 +24,7 @@
   --light-green-underline: #bee8cc;
   --gray: #f3f5f6;
   --white: #fff;
+  --icon-transition: 300ms ease-in;
 }
 
 body {
