@@ -96,11 +96,12 @@ body {
 
 .section-title-underline {
   position: relative;
+  display: inline-block;
 }
 
 .section-title-underline::after {
   position: absolute;
-  bottom: 4px;
+  bottom: 0;
   left: 0;
   content: '';
   z-index: -1;
