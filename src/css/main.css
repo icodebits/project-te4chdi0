@@ -27,6 +27,7 @@
   --light-black: rgba(18, 20, 23, 0.5);
   --font-weight-primary-bold: 700;
   --font-weight-primary-regular: 400;
+  --icon-transition: 300ms ease-in;
   --items: 1;
 }
 

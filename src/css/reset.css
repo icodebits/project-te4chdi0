@@ -26,6 +26,10 @@ a {
 
 button {
   cursor: pointer;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 img {
