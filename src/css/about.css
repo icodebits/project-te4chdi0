@@ -1,5 +1,40 @@
 /* About styles */
 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in-animation {
+    opacity: 0;
+    animation: fadeInAnimation 2s ease forwards;
+}
+
+.fade-in-animation#about-card-01 {
+    animation-delay: 0ms;
+}
+
+.fade-in-animation#about-card-02 {
+    animation-delay: 200ms;
+}
+
+.fade-in-animation#about-card-03 {
+    animation-delay: 400ms;
+}
+
+.fade-in-animation#about-card-04 {
+    animation-delay: 600ms;
+}
+
+.fade-in-animation#about-card-emoji {
+    animation-delay: 800ms;
+}
+
 .about-cards-box {
     display: flex;
     flex-direction: column;
