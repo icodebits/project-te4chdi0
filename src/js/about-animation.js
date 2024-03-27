@@ -13,9 +13,9 @@ function handleScroll() {
     var element = document.querySelector('.fade-in-animation');
     if (isInViewport(element)) {
         element.style.opacity = '1'; // Start the animation when element enters the viewport
-        window.removeEventListener('scroll', handleScroll); // Remove the scroll event listener once animation starts
+        window.removeEventListener('scroll-to-about-section', handleScroll); // Remove the scroll event listener once animation starts
     }
 }
 
 // Add scroll event listener
-window.addEventListener('scroll', handleScroll);
+window.addEventListener('scroll-to-about-section', handleScroll);
