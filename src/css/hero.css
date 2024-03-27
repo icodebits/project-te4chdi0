@@ -57,7 +57,7 @@
                       url(/images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position-x: 0px;
-    background-position-y: -122.887px;    /* -122.887px */
+    background-position-y: calc(100% + 123px);    /* -122.887px */
     background-size: 113.889% 139.074%;
   }
 }
