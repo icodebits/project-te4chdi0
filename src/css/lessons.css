@@ -8,6 +8,23 @@
   padding-bottom: 40px;
 }
 
+[data-animation-lessons='can-load'] .fade-in-animation {
+  opacity: 0;
+  animation: fade-in 2s ease forwards;
+}
+
+.fade-in-animation#lesson-card-01 {
+  animation-delay: 0ms;
+}
+
+.fade-in-animation#lesson-card-02 {
+  animation-delay: 200ms;
+}
+
+.fade-in-animation#lesson-card-03 {
+  animation-delay: 400ms;
+}
+
 .header-big {
   color: var(--black);
   text-align: center;

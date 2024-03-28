@@ -4,6 +4,23 @@
   padding-bottom: 80px;
 }
 
+[data-animation-reviews='can-load'] .fade-in-animation {
+  opacity: 0;
+  animation: fade-in 2s ease forwards;
+}
+
+.fade-in-animation#review-card-01 {
+  animation-delay: 0ms;
+}
+
+.fade-in-animation#review-card-02 {
+  animation-delay: 200ms;
+}
+
+.fade-in-animation#review-card-03 {
+  animation-delay: 400ms;
+}
+
 .reviews.container {
   display: flex;
   flex-direction: column;
