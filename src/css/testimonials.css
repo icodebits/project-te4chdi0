@@ -1,1 +1,110 @@
 /* Testimonials styles */
+.reviews.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.student-list-cards {
+  display: flex;
+  justify-content: center;
+  gap: 32px; 
+}
+
+.student-list-review-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 30px;
+  max-width: 335px;
+  background: var(--gray);
+
+  --review-card-padding: 20px;
+  --review-card-gap: 20px;
+  width: calc(100% - var(--review-card-padding) * 2);
+  padding: var(--review-card-padding);
+}
+
+@media only screen and (min-width: 768px) {
+  .student-list-review-cards {
+    --review-card-padding: 32px 16px;
+    --review-card-gap: 32px;
+    width: calc((100% - 1 * 32px) / 2);
+    height: 349px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .student-list-review-cards {
+    width: calc((100% - 2 * 32px) / 3);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .student-list-cards .student-list-review-cards:not(:first-child) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1279px) and (min-width: 768px) {
+  .student-list-cards .student-list-review-cards:not(:first-child):not(:nth-child(2)) {
+    display: none;
+  }
+}
+
+.student-profile {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 14px;
+  border-radius: 15px;
+  height: 78px;
+  background: var(--green);
+}
+.student-profile-picture {
+  border-radius: 50%; 
+}
+
+.student-test-grean {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.student-profile-name, .student-profile-subtitle {
+  letter-spacing: -0.02em;
+  color: var(--white); 
+}
+
+.student-profile-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.student-profile-subtitle {
+  font-size: 12px;
+  line-height: 1.33333;
+  opacity: 0.5;
+}
+
+.testimonials-text {
+  overflow-y: auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.71429;
+  color: rgba(18, 20, 23, 0.5);
+  padding: 0 14px; 
+}
+
+@media only screen and (min-width: 768px) {
+  .testimonials-text {
+    padding: 0 16px;
+  }
+}
+
+.section-students .container {
+  margin-bottom: 80px;
+}
+
+/* #endregion Testimonials */
