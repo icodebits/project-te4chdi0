@@ -1,7 +1,7 @@
 /* Lessons styles */
 .lessons-section {
   padding-top: 40px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 [data-animation-lessons='can-load'] .fade-in-animation {
@@ -179,7 +179,7 @@
 @media screen and (min-width: 768px) {
   .lessons-section {
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
 
   .lessons-title {
@@ -268,7 +268,7 @@
 @media screen and (min-width: 1280px) {
   .lessons-section {
     padding-top: 75px;
-    padding-bottom: 150px;
+    padding-bottom: 75px;
   }
 
   .lessons-description {
