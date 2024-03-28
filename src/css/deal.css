@@ -30,6 +30,7 @@
   }
   @media only screen and (min-width: 1280px) {
     padding: 64px;
+    margin: 0 -64px;
     padding-bottom: 142px;
   }
 }
@@ -60,6 +61,20 @@
   padding: inherit;
   border-radius: inherit;
   background: var(--white);
+
+  @media only screen and (min-width: 768px) {
+    background-repeat: no-repeat;
+    background-position: right -50px bottom 63px;
+    background-size: 214px;
+    background-image: url(../images/deal-img.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-position: right bottom 79px;
+      background-image: url(../images/deal-img@2x.png);
+    }
+  }
 
   @media only screen and (min-width: 1280px) {
     padding-bottom: 64px;
@@ -120,6 +135,7 @@
     margin-bottom: 32px;
   }
   @media only screen and (min-width: 1280px) {
+    max-width: 654px;
     margin-bottom: 40px;
   }
 }
