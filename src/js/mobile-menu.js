@@ -10,6 +10,17 @@
     mobileMenu.classList.toggle('is-open');
   };
 
+  const closeMenu = () => {
+    const isMenuOpen =
+      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+    openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+    mobileMenu.classList.remove('is-open');
+  };
+
+  mobileMenu.querySelectorAll('.menu-link').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
 
