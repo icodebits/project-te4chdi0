@@ -28,7 +28,7 @@
             id="contact-name"
             name="contact-name"
             placeholder="Name"
-            pattern="[a-zA-Zа-яА-ЯЇїІі]*"
+            pattern="[a-zA-Zа-яА-ЯЇїІі\s]*"
             required
           />
         </div>
@@ -52,7 +52,7 @@
             id="contact-phone"
             name="contact-phone"
             placeholder="Phone"
-            pattern="[0-9+() -]+"
+            pattern="[0-9]*"
             required
           />
         </div>
@@ -69,20 +69,20 @@
         </div>
         <fieldset class="radio-buttons">
           <legend class="radio-legend">Choose a teacher</legend>
-          <div class="radio-buttons__box">
-            <div class="radio-buttons__box_item">
+          <ul class="radio-buttons__box">
+            <li class="radio-buttons__box_item">
               <input class="radio-btn-item" type="radio" id="teacher1" name="teachers" value="Maria" checked="checked"/>
               <label class="radio-label" for="teacher1">Maria</label>
-            </div>
-            <div class="radio-buttons__box_item">
+            </li>
+            <li class="radio-buttons__box_item">
               <input class="radio-btn-item" type="radio" id="teacher2" name="teachers" value="Artem" />
               <label class="radio-label" for="teacher2">Artem</label>
-            </div>
-            <div class="radio-buttons__box_item">
+            </li>
+            <li class="radio-buttons__box_item">
               <input class="radio-btn-item" type="radio" id="teacher3" name="teachers" value="Ilona" />
               <label class="radio-label" for="teacher3">Ilona</label>
-            </div>
-            <div class="radio-buttons__box_item">
+            </li>
+            <li class="radio-buttons__box_item">
               <input class="radio-btn-item"
                 type="radio"
                 id="teacher4"
@@ -90,8 +90,8 @@
                 value="Volodymyr"
               />
               <label class="radio-label" for="teacher4">Volodymyr</label>
-            </div>
-          </div>
+            </li>
+          </ul>
         </fieldset>
         <button class="application-form-btn lessons-item-link" type="submit">
           Send
