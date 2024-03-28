@@ -4,51 +4,18 @@
     padding-bottom: 40px;
 }
 
-@keyframes fadeInAnimation {
+@keyframes fade-in {
   0% {
     opacity: 0;
   }
-  50% {
-    opacity: 0.6;
-  }
   100% {
     opacity: 1;
   }
 }
-@keyframes focus-in {
-  0% {
-    filter: blur(12px);
-  }
-  100% {
-    filter: blur(0px);
-    opacity: 1;
-  }
-}
-@keyframes blur-out {
-  0% {
-    filter: blur(0.01);
-  }
-  100% {
-    filter: blur(12px) opacity(0);
-  }
-}
-.fade-in-animation {
+
+[data-animation='can-load'] .fade-in-animation {
   opacity: 0;
-  animation: cubic-bezier(0.55, 0.085, 0.68, 0.53) forwards;
-}
-[data-animation='fade-in'] .fade-in-animation {
-  animation-name: focus-in;
-  animation-duration: 600ms;
-}
-/**
-  | If need run animation once, just remove
-  | else block in about-animation.js file
-*/
-[data-animation='blur-out'] .fade-in-animation {
-  opacity: 1;
-  animation-name: blur-out;
-  animation-duration: 1000ms;
-  animation-fill-mode: both;
+  animation: fade-in 2s ease forwards;
 }
 
 .fade-in-animation#about-card-01 {
