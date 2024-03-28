@@ -5,9 +5,14 @@ document.getElementById('scrollDownToFooter').addEventListener('click', function
   }
 });
 
-document.getElementById('scrollDownToForm').addEventListener('click', function() {
-  const form = document.querySelector('form');
+function scrollToForm() {
+  const form = document.querySelector('#register-form');
   if (form) {
     form.scrollIntoView({ behavior: 'smooth' });
   }
-});
+}
+
+document.getElementById('scrollDownToForm').addEventListener('click', scrollToForm);
+document.getElementById('scrollDownToForm-lessons1').addEventListener('click', scrollToForm);
+document.getElementById('scrollDownToForm-lessons2').addEventListener('click', scrollToForm);
+document.getElementById('scrollDownToForm-lessons3').addEventListener('click', scrollToForm);

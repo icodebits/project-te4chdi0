@@ -1,5 +1,10 @@
 /* Lessons styles */
 
+.lessons-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .header-big {
   color: var(--black);
   text-align: center;
@@ -50,11 +55,6 @@
   line-height: 1.5;
   color: var(--light-black);
   font-weight: var(--font-weight-primary-regular);
-}
-
-.lessons-container {
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .lessons-title {
@@ -169,6 +169,11 @@
 
 /* 768px */
 @media screen and (min-width: 768px) {
+  .lessons-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   .lessons-title {
     letter-spacing: -0.8px;
     line-height: 1.2;
@@ -253,9 +258,9 @@
 /* 1280px */
 
 @media screen and (min-width: 1280px) {
-  .lessons-container {
-    min-width: 1152px;
-    padding: 0 64px;
+  .lessons-section {
+    padding-top: 75px;
+    padding-bottom: 75px;
   }
 
   .lessons-description {
