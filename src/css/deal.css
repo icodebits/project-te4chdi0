@@ -70,14 +70,14 @@
 }
 /* #endregion Animations */
 .deal-section {
-  margin-bottom: 80px;
+  padding: 40px 0;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 100px;
+    padding: 50px 0;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-bottom: 150px;
+    padding: 75px 0;
   }
 }
 
