@@ -476,6 +476,7 @@
             id="contact-name"
             name="contact-name"
             placeholder="Name"
+            pattern="[a-zA-Zа-яА-ЯЇїІі]*"
             required
           />
         </div>
@@ -487,6 +488,7 @@
             id="contact-email"
             name="contact-email"
             placeholder="Email"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
             required
           />
         </div>
@@ -498,6 +500,7 @@
             id="contact-phone"
             name="contact-phone"
             placeholder="Phone"
+            pattern="[0-9+() -]+"
             required
           />
         </div>
