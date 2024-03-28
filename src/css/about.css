@@ -1,6 +1,7 @@
 /* About styles */
 .about-section {
-  margin-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 @keyframes fadeInAnimation {
@@ -134,9 +135,10 @@
     --items: 2;
   }
 
-  .about-section {
-    margin-bottom: 100px;
-  }
+    .about-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 
   .about-cards-box {
     gap: 32px;
@@ -162,7 +164,8 @@
     flex-direction: row;
   }
 
-  .about-section {
-    margin-bottom: 150px;
-  }
+    .about-section {
+        padding-top: 48px;
+        padding-bottom: 75px;
+    }
 }
