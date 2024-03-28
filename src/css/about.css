@@ -1,137 +1,135 @@
 /* About styles */
-
 .about-section {
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.fade-in-animation {
-    opacity: 0;
-    animation: fadeInAnimation 2s ease forwards;
+[data-animation='can-load'] .fade-in-animation {
+  opacity: 0;
+  animation: fade-in 2s ease forwards;
 }
 
 .fade-in-animation#about-card-01 {
-    animation-delay: 0ms;
+  animation-delay: 0ms;
 }
 
 .fade-in-animation#about-card-02 {
-    animation-delay: 200ms;
+  animation-delay: 200ms;
 }
 
 .fade-in-animation#about-card-03 {
-    animation-delay: 400ms;
+  animation-delay: 400ms;
 }
 
 .fade-in-animation#about-card-04 {
-    animation-delay: 600ms;
+  animation-delay: 600ms;
 }
 
 .fade-in-animation#about-card-emoji {
-    animation-delay: 800ms;
+  animation-delay: 800ms;
 }
 
 .about-cards-box {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .about-cards-ordered {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;    
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .about-card-emoji {
-    border-radius: 16px;
-    background-color: var(--green);
-    height: 313px;
-    position: relative;
+  border-radius: 16px;
+  background-color: var(--green);
+  height: 313px;
+  position: relative;
 }
 
 .about-card-emoji-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .about-card {
-    padding: 32px;
-    border-radius: 16px;
-    background-color: var(--gray);
-    width: calc((100% - 20px * (var(--items) - 1)) / var(--items));
+  padding: 32px;
+  border-radius: 16px;
+  background-color: var(--gray);
+  width: calc((100% - 20px * (var(--items) - 1)) / var(--items));
 }
 
 .about-card-order-number {
-    font-weight: var(--font-weight-primary-bold);
-    font-size: 28px;
-    line-height: 1.1429;
-    letter-spacing: -0.02em;
-    color: var(--green);
-    margin-bottom: 16px;
+  font-weight: var(--font-weight-primary-bold);
+  font-size: 28px;
+  line-height: 1.1429;
+  letter-spacing: -0.02em;
+  color: var(--green);
+  margin-bottom: 16px;
 }
 
 .about-card-text-content {
-    font-weight: var(--font-weight-primary-bold);
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    color: var(--black);
+  font-weight: var(--font-weight-primary-bold);
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--black);
 }
 
 @media screen and (min-width: 768px) {
-    .about-card-emoji {
-        height: 243px;
-    }
+  .about-card-emoji {
+    height: 243px;
+  }
 
-    .about-cards-ordered {
-        flex-direction: row;
-        flex-wrap: wrap;
-        --items: 2;
-    }
+  .about-cards-ordered {
+    flex-direction: row;
+    flex-wrap: wrap;
+    --items: 2;
+  }
 
     .about-section {
         padding-top: 50px;
         padding-bottom: 50px;
     }
 
-    .about-cards-box {
-        gap: 32px;
-    }
+  .about-cards-box {
+    gap: 32px;
+  }
 
-    .about-cards-ordered {
-        gap: 32px;
-    }
+  .about-cards-ordered {
+    gap: 32px;
+  }
 
-    .about-card {
-        width: calc((100% - 32px * (var(--items) - 1)) / var(--items));
-    }
+  .about-card {
+    width: calc((100% - 32px * (var(--items) - 1)) / var(--items));
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .about-card-emoji {
-        width: 310px;
-        height: 352px;
-        flex-shrink: 0;
-    }
+  .about-card-emoji {
+    width: 310px;
+    height: 352px;
+    flex-shrink: 0;
+  }
 
-    .about-cards-box {
-        flex-direction: row;
-    }
+  .about-cards-box {
+    flex-direction: row;
+  }
 
     .about-section {
         padding-top: 48px;
