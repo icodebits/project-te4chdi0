@@ -1,6 +1,6 @@
 /* About styles */
 .about-section {
-  padding-top: 40px;
+  padding-top: 80px;
   padding-bottom: 40px;
 }
 
@@ -103,7 +103,7 @@
   }
 
   .about-section {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 50px;
   }
 
@@ -132,7 +132,7 @@
   }
 
   .about-section {
-    padding-top: 48px;
+    padding-top: 96px;
     padding-bottom: 75px;
   }
 }
