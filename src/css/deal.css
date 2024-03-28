@@ -268,7 +268,7 @@
 
   &:hover,
   &:focus {
-    background-color: #38ae5f;
+    background-color: var(--dark-green);
     animation-play-state: paused;
   }
 
