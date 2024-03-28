@@ -25,9 +25,11 @@
 <symbol id="check_mark" viewBox="0 0 43 32">
 <path fill="none" stroke="#fff" stroke-width="5.3333" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M39.111 2.667l-24.445 24.445-11.111-11.111"></path>
 </symbol>
-<symbol id="icon-check" viewBox="0 0 32 32">
-<path fill="#4dc274" style="fill: var(--color1, #4dc274)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
-<path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M22.4 11.2l-8.8 9.6-4-4.364"></path>
+<symbol id="deal-icon" viewBox="0 0 20 20" fill="none">
+    <path d="M14 7L8.5 13L6 10.2727" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+<symbol id="deal-icon-circle" viewBox="0 0 20 20">
+    <circle cx="10" cy="10" r="10" fill="#4DC274"/>
 </symbol>
 </defs>
 </svg>
