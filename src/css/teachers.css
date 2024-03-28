@@ -1,15 +1,18 @@
 /* #region Teachers */
 .section-teachers {
-  padding-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .section-teachers {
-    padding-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 50px;
   }
 }
 @media screen and (min-width: 1280px) {
   .section-teachers {
-    padding-bottom: 150px;
+    padding-top: 150px;
+    padding-bottom: 75px;
   }
 }
 

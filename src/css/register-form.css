@@ -1,5 +1,6 @@
 /* Register form styles */
 .application {
+  padding-top: 40px;
   padding-bottom: 40px;
 }
 
@@ -202,6 +203,7 @@
     flex-direction: row;
   }
   .application {
+    padding-top: 50px;
     padding-bottom: 50px;
   }
   .application-form-privacy-statement {
@@ -220,6 +222,7 @@
     opacity: 1;
   }
   .application {
+    padding-top: 75px;
     padding-bottom: 75px;
   }
 }
