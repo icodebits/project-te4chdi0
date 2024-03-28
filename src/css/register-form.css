@@ -136,7 +136,7 @@
   appearance: none;
   width: 20px;
   height: 20px;
-  border: 1px solid rgba(18, 20, 23, 0.2);
+  border: 2px solid rgba(18, 20, 23, 0.2);
   border-radius: 50%;
   outline: none;
   position: relative;
@@ -145,8 +145,8 @@
 .radio-btn-item::before {
   content: '';
   display: block;
-  width: 50%;
-  height: 50%;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   position: absolute;
   top: 50%;
