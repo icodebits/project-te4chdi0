@@ -156,11 +156,11 @@ body {
 }
 
 @keyframes fade-in {
-  0% {
+  from {
     opacity: 0;
   }
 
-  100% {
+  to {
     opacity: 1;
   }
 }
