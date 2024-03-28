@@ -1,4 +1,26 @@
 /* Testimonials styles */
+.section-students {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+[data-animation-reviews='can-load'] .fade-in-animation {
+  opacity: 0;
+  animation: fade-in 2s ease forwards;
+}
+
+.fade-in-animation#review-card-01 {
+  animation-delay: 0ms;
+}
+
+.fade-in-animation#review-card-02 {
+  animation-delay: 200ms;
+}
+
+.fade-in-animation#review-card-03 {
+  animation-delay: 400ms;
+}
+
 .reviews.container {
   display: flex;
   flex-direction: column;
@@ -14,29 +36,66 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 20px;
-  border-radius: 30px;
-  max-width: 335px;
+  padding: 20px 20px 40px;
+  border-radius: 16px;
   background: var(--gray);
+}
 
-  --review-card-padding: 20px;
-  --review-card-gap: 20px;
-  width: calc(100% - var(--review-card-padding) * 2);
-  padding: var(--review-card-padding);
+.student-profile {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 14px;
+  border-radius: 8px;
+  height: 78px;
+  background: var(--green);
+}
+
+.testimonials-text {
+  overflow-y: auto;
+  font-weight: var(--font-weight-primary-regular);
+  font-size: 14px;
+  line-height: 1.71429;
+  color: var(--light-black);
+  padding: 0 14px;
 }
 
 @media only screen and (min-width: 768px) {
+  .section-students {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  .testimonials-text {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 16px;
+  }
+
+  .student-list-cards {
+    --items: 2;
+  }
+
   .student-list-review-cards {
-    --review-card-padding: 32px 16px;
-    --review-card-gap: 32px;
-    width: calc((100% - 1 * 32px) / 2);
-    height: 349px;
+    border-radius: 30px;
+    gap: 32px;
+    padding: 32px 16px 40px;
+    width: calc((100% - 32px * (var(--items) - 1)) / var(--items));
+  }
+
+  .student-profile {
+    border-radius: 15px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .student-list-review-cards {
-    width: calc((100% - 2 * 32px) / 3);
+  .section-students {
+    padding-top: 75px;
+    padding-bottom: 150px;
+  }
+
+  .student-list-cards {
+    --items: 3;
   }
 }
 
@@ -52,15 +111,6 @@
   }
 }
 
-.student-profile {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  padding: 14px;
-  border-radius: 15px;
-  height: 78px;
-  background: var(--green);
-}
 .student-profile-picture {
   border-radius: 50%; 
 }
@@ -86,25 +136,6 @@
   font-size: 12px;
   line-height: 1.33333;
   opacity: 0.5;
-}
-
-.testimonials-text {
-  overflow-y: auto;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.71429;
-  color: rgba(18, 20, 23, 0.5);
-  padding: 0 14px; 
-}
-
-@media only screen and (min-width: 768px) {
-  .testimonials-text {
-    padding: 0 16px;
-  }
-}
-
-.section-students .container {
-  margin-bottom: 80px;
 }
 
 /* #endregion Testimonials */

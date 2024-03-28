@@ -16,3 +16,4 @@ document.getElementById('scrollDownToForm').addEventListener('click', scrollToFo
 document.getElementById('scrollDownToForm-lessons1').addEventListener('click', scrollToForm);
 document.getElementById('scrollDownToForm-lessons2').addEventListener('click', scrollToForm);
 document.getElementById('scrollDownToForm-lessons3').addEventListener('click', scrollToForm);
+document.getElementById('scrollDownToForm-deal').addEventListener('click', scrollToForm);

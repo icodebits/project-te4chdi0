@@ -20,7 +20,7 @@
   opacity: 0;
 }
 .application-ad__img {
-  background-image: url("..\images\form-img.png");
+  background-image: url("../images/form-img.png");
   width: 100%;
   max-width: 492px;
   height: 392px;
@@ -51,7 +51,9 @@
   margin-bottom: 8px;
 }
 .application__form {
-
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
 }
 .application-form-btn {
   display: block;
@@ -163,7 +165,7 @@
 }
 @media (min-resolution: 192dpi) {
   .application-ad__img {
-    background-image: url("..\images\form-img@2x.png");
+    background-image: url("../images/form-img@2x.png");
   }
 }
 @media screen and (min-width: 768px) {

@@ -145,6 +145,22 @@ body {
     font-size: 18px;
     line-height: 1.6667;
     margin-bottom: 64px;
-    max-width: 658px;
+    max-width: 586px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .supporting-text {
+    max-width: 647px;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
