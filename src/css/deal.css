@@ -1,16 +1,4 @@
 /* Deal styles */
-.deal-section {
-  margin-bottom: 80px;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 100px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 150px;
-  }
-}
-
 .deal-section-content {
   position: relative;
   padding: 40px 20px;
