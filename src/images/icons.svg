@@ -25,5 +25,11 @@
 <symbol id="check_mark" viewBox="0 0 43 32">
 <path fill="none" stroke="#fff" stroke-width="5.3333" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M39.111 2.667l-24.445 24.445-11.111-11.111"></path>
 </symbol>
+<symbol id="deal-icon" viewBox="0 0 20 20" fill="none">
+    <path d="M14 7L8.5 13L6 10.2727" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+<symbol id="deal-icon-circle" viewBox="0 0 20 20">
+    <circle cx="10" cy="10" r="10" fill="#4DC274"/>
+</symbol>
 </defs>
 </svg>
