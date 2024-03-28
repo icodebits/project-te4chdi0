@@ -1,6 +1,6 @@
 /* Register form styles */
 .application {
-  margin-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 .application-body {
@@ -200,7 +200,7 @@
     flex-direction: row;
   }
   .application {
-    margin-bottom: 100px;
+    padding-bottom: 50px;
   }
   .application-form-privacy-statement {
     font-size: 14px;
@@ -218,6 +218,6 @@
     opacity: 1;
   }
   .application {
-    margin-bottom: 150px;
+    padding-bottom: 75px;
   }
 }
