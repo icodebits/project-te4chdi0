@@ -78,11 +78,17 @@
   font-weight: 700;
   font-size: 38px;
   line-height: 1.0526;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .hero-title .accent {
   color: var(--light-green-underline);
+}
+
+@media screen and (min-width: 375px) {
+  .hero-title {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -101,14 +107,24 @@
 }
 
 .hero-button {
+  display: block;
+  padding: 14px;
+  text-align: center;
+  max-width: 295px;
+
   background-color: var(--green);
   color: var(--white);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.7143;
-  padding: 14px 78px;
   border-radius: 12px;
   transition: background-color 250ms linear;
+}
+
+@media screen and (min-width: 375px) {
+  .hero-button {
+    padding: 14px 78px;
+  }
 }
 
 .hero-button:hover, .hero-button:focus {
@@ -120,6 +136,7 @@
     font-size: 18px;
     line-height: 1.5556;
     padding: 16px 64px;
+    max-width: 306px;
   }
 }
 
