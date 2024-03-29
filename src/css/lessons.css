@@ -90,8 +90,7 @@
 .lessons-item {
   width: 100%;
   max-width: 336px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 20px;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
@@ -211,8 +210,7 @@
     width: 100%;
     max-width: 336px;
     border-radius: 16px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 32px 16px;
     outline: 1px solid var(--green);
   }
 
@@ -278,6 +276,7 @@
   }
 
   .lessons-item {
+    padding: 32px;
     max-width: 320px;
   }
 
