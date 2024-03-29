@@ -19,8 +19,7 @@ export default defineConfig(({ command }) => {
             if (id.includes('node_modules')) {
               return 'vendor';
             }
-          },
-          entryFileNames: 'commonHelpers.js',
+          }
         },
       },
       outDir: '../dist',
