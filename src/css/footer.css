@@ -28,6 +28,9 @@
       grid-template-columns: minmax(334px, 496px) minmax(218px, 379px) 1fr;
       row-gap: 110px;
     }
+    @media only screen and (min-width: 1280px) {
+      row-gap: 64px;
+    }
   }
 }
 .footer-top {
